@@ -181,6 +181,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: InteractionTab
       objectReference: {fileID: 0}
+    - target: {fileID: 3488741967748118138, guid: 923ce5895370fac47bbcd752136eed7b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
