@@ -6,12 +6,4 @@ public class Inventory : MonoBehaviour
 {
     public bool[] isFull;
     public GameObject[] slots;
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    
 }
