@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PickUp : MonoBehaviour
 {
+    private float _minimumInteractionDistance = 2f;
     private Inventory _inventory = null;
     
     public GameObject itemIcon;
@@ -16,7 +17,10 @@ public class PickUp : MonoBehaviour
 
     void Update()
     {
-        CheckMouseClick();
+        if(CheckInteractionDistance())
+        {
+            CheckMouseClick();
+        }
     }
 
     private void CheckMouseClick()
@@ -32,6 +36,8 @@ public class PickUp : MonoBehaviour
             }
         }
     }
+    private bool CheckInteractionDistance() => Vector3.Distance(transform.position, 
+        GameObject.FindGameObjectWithTag("Player").transform.position) < _minimumInteractionDistance;
     private void CollectItem(GameObject item)
     {
         for (int i = 0; i < _inventory.slots.Length; i++)
