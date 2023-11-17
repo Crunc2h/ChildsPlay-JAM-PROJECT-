@@ -26,7 +26,7 @@ public class ReceiveInteraction : MonoBehaviour
     }
     private void CheckMouseClick()
     {
-        if (Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButtonDown(0))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
@@ -42,6 +42,11 @@ public class ReceiveInteraction : MonoBehaviour
                 {
                     FailedInteraction();
                 }
+            }
+
+            if(hit.collider != null && hit.collider.tag == "Robot")
+            {
+                GameObject.FindGameObjectWithTag("Robot").GetComponent<QuestManager>().PlayerClick();
             }
         }
     }

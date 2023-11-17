@@ -21,6 +21,21 @@ public class EnableInteractionsTab : MonoBehaviour
     }
     public void OpenInteractionTab()
     {
+        if(GameObject.FindGameObjectWithTag("Player").GetComponent<ItemInteraction>().interactionActive)
+        {
+            GameObject.FindGameObjectWithTag("Player").GetComponent<ItemInteraction>().interactionActive = false;
+        }
+        if(GameObject.FindGameObjectWithTag("Player").GetComponent<ItemInteraction>().ActiveItemID != 0)
+        {
+            GameObject.FindGameObjectWithTag("Player").GetComponent<ItemInteraction>().ActiveItemID = 0;
+        }
+        if(GameObject.FindGameObjectWithTag("Player").GetComponent<ItemInteraction>().CurrentItemSlot is not null)
+        {
+            GameObject.FindGameObjectWithTag("Player").GetComponent<ItemInteraction>().CurrentItemSlot = null;
+        }
+
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.ForceSoftware);
+
         CheckAndCloseIfAnyOpen();
         
         var parentSlot = transform.parent;
