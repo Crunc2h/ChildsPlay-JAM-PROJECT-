@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class EnableInteractionsTab : MonoBehaviour
 {
     private Inventory _inventory;
-    private Color normalButtonColorHexadecimal = Color.black;
+    private Color normalButtonColorHexadecimal = Color.red;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,16 +25,30 @@ public class EnableInteractionsTab : MonoBehaviour
         var interactionTab = parentSlot.transform.GetChild(0);
         interactionTab.gameObject.SetActive(true);
         var itemReference = parentSlot.GetComponent<ItemReference>().currentItemReference;
+        
         if(!itemReference.Usable)
         {
             var button = interactionTab.transform.GetChild(0).gameObject.GetComponent<Button>();
             button.interactable = false;
+            button.image.color = Color.gray;
+        }
+        else
+        {
+            var button = interactionTab.transform.GetChild(0).gameObject.GetComponent<Button>();
+            button.interactable = true;
             button.image.color = normalButtonColorHexadecimal;
         }
-        if(!itemReference.Interactable)
+        
+        if (!itemReference.Interactable)
         {
-            var button = interactionTab.transform.GetChild(1).gameObject.GetComponent<Button>();
+            var button = interactionTab.transform.GetChild(2).gameObject.GetComponent<Button>();
             button.interactable = false;
+            button.image.color = Color.gray;
+        }
+        else
+        {
+            var button = interactionTab.transform.GetChild(2).gameObject.GetComponent<Button>();
+            button.interactable = true;
             button.image.color = normalButtonColorHexadecimal;
         }
     }

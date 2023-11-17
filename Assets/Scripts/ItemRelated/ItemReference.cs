@@ -5,6 +5,7 @@ using UnityEngine;
 public class ItemReference : MonoBehaviour
 {
     public ItemInterface currentItemReference = null;
+    public GameObject itemPrefab;
     // Start is called before the first frame update
     void Start()
     {

@@ -6,6 +6,7 @@ public class PickUp : MonoBehaviour
 {
     private Inventory _inventory = null;
     public GameObject itemIcon;
+    public GameObject itemPrefab;
 
     void Start()
     {
@@ -36,6 +37,8 @@ public class PickUp : MonoBehaviour
             {
                 _inventory.isFull[i] = true;
                 _inventory.slots[i].GetComponent<ItemReference>().currentItemReference = gameObject.GetComponent<Item>();
+                _inventory.slots[i].GetComponent<ItemReference>().itemPrefab = GameObject.Instantiate(itemPrefab);
+                _inventory.slots[i].GetComponent<ItemReference>().itemPrefab.SetActive(false);
                 Instantiate(itemIcon, _inventory.slots[i].transform, false);
                 Destroy(item);
                 break;

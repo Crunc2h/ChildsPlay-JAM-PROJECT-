@@ -6,8 +6,12 @@ public class Item : MonoBehaviour, ItemInterface
 {
     [SerializeField] private bool _isUsable = false;
     [SerializeField] private bool _isInteractable = false;
+    [SerializeField] private GameObject _itemPrefab;
     public bool Usable { get; set; }
     public bool Interactable { get; set; }
+
+
+
     public void Interact()
     {
         Debug.Log("INTERACT");
@@ -30,4 +34,5 @@ public class Item : MonoBehaviour, ItemInterface
     {
         
     }
+
 }

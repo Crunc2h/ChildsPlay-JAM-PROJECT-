@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemIcon: {fileID: 8787286678226926528, guid: 6a48ccf4174526c4583488e7ab32f6fe, type: 3}
+  itemPrefab: {fileID: 1126233082486000986}
 --- !u!58 &2495534593066174771
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -147,5 +148,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c79741a5805ee148b20710b9029ae69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isUsable: 1
-  _isInteractable: 1
+  _isUsable: 0
+  _isInteractable: 0
+  _itemPrefab: {fileID: 1126233082486000986}

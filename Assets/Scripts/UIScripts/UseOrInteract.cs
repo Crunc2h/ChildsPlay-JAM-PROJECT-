@@ -28,5 +28,24 @@ public class UseOrInteract : MonoBehaviour
         {
             itemReference.currentItemReference.Interact();
         }
+        else if(gameObject.tag == "DropButton")
+        {
+            var parentSlot = transform.parent.transform.parent.gameObject;
+            var itemIcon = parentSlot.transform.GetChild(1).gameObject;
+            var inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+            var interactionTab = transform.parent.gameObject;
+            for(int i = 0; i < inventory.slots.Length; i++)
+            {
+                if (inventory.slots[i] == parentSlot)
+                {
+                    inventory.isFull[i] = false;
+                }
+            }
+            parentSlot.GetComponent<ItemReference>().itemPrefab.transform.position = new Vector3(GameObject.FindGameObjectWithTag("Player").transform.position.x,
+                GameObject.FindGameObjectWithTag("Player").transform.position.y, transform.position.z);
+            parentSlot.GetComponent<ItemReference>().itemPrefab.SetActive(true);
+            Destroy(itemIcon);
+            interactionTab.SetActive(false);
+        }
     }
 }
