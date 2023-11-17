@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c05a89b0fce2caa43be3355b89971c31
+guid: 458d1be76517ba244b28b0fea051b02d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,10 +123,10 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: daisy_idle-Sheet_0
+      name: daisy_back_idle-Sheet_0
       rect:
         serializedVersion: 2
-        x: 22
+        x: 23
         y: 9
         width: 19
         height: 48
@@ -137,17 +137,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bcdf5a3a6f6b453459cace26ff362842
-      internalID: -1707383089
+      spriteID: 8601314b5240a814db8a8e5f40437df5
+      internalID: -677243616
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: daisy_idle-Sheet_1
+      name: daisy_back_idle-Sheet_1
       rect:
         serializedVersion: 2
-        x: 86
+        x: 87
         y: 9
         width: 19
         height: 48
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 887b1bd7a9a5cdf40ba3d02d3d6ebe3d
-      internalID: -1698358047
+      spriteID: 05c6f52fb00804542ba2471ac181faee
+      internalID: 1337032725
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: daisy_idle-Sheet_2
+      name: daisy_back_idle-Sheet_2
       rect:
         serializedVersion: 2
-        x: 150
+        x: 151
         y: 9
         width: 19
-        height: 47
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,38 +179,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52f67d7b40c46b1438364923fafb63cf
-      internalID: -1703426027
+      spriteID: 375317c4ddb259e47bf79cc34952977c
+      internalID: -990969819
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: daisy_idle-Sheet_3
+      name: daisy_back_idle-Sheet_3
       rect:
         serializedVersion: 2
-        x: 214
-        y: 9
-        width: 19
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2c47f9b47597a4446a624bd63791aa77
-      internalID: -916220624
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: daisy_idle-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 278
+        x: 215
         y: 9
         width: 19
         height: 45
@@ -221,17 +200,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20ae9aa58fa7cae4f849d89440622152
-      internalID: -1971897611
+      spriteID: ca3f38efc91254e4884cc5de2429172d
+      internalID: 151125322
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: daisy_idle-Sheet_5
+      name: daisy_back_idle-Sheet_4
       rect:
         serializedVersion: 2
-        x: 342
+        x: 279
         y: 9
         width: 19
         height: 46
@@ -242,17 +221,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d88553dd5cd2574393dbee6422e7a8a
-      internalID: 927950099
+      spriteID: a0d39adbcbf862445934709e13e999fc
+      internalID: 502748070
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: daisy_idle-Sheet_6
+      name: daisy_back_idle-Sheet_5
       rect:
         serializedVersion: 2
-        x: 406
+        x: 343
         y: 9
         width: 19
         height: 47
@@ -263,38 +242,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcec3ec81bdc815489ab1b202f95f56b
-      internalID: 790742674
+      spriteID: 0a76c0f2b2645674b9dc078157572be2
+      internalID: 1749851633
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: daisy_idle-Sheet_7
+      name: daisy_back_idle-Sheet_6
       rect:
         serializedVersion: 2
-        x: 470
-        y: 9
-        width: 19
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 37b16a80515da5d48bab7e07fc20b078
-      internalID: -1126089547
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: daisy_idle-Sheet_8
-      rect:
-        serializedVersion: 2
-        x: 534
+        x: 407
         y: 9
         width: 19
         height: 48
@@ -305,17 +263,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 211bc2da6479ec04c8067f87dc57c51c
-      internalID: -516593987
+      spriteID: 38305e02b32709f40acfd8da6e456a75
+      internalID: 1648620474
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: daisy_idle-Sheet_9
+      name: daisy_back_idle-Sheet_7
       rect:
         serializedVersion: 2
-        x: 598
+        x: 471
         y: 9
         width: 19
         height: 48
@@ -326,20 +284,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c748b789597d4dd49b4141374eb871e3
-      internalID: -1041723416
+      spriteID: e78402e327025bb4b899b1dc79f97e91
+      internalID: -174950572
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: daisy_idle-Sheet_10
+      name: daisy_back_idle-Sheet_8
       rect:
         serializedVersion: 2
-        x: 662
+        x: 535
         y: 9
         width: 19
-        height: 49
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -347,29 +305,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cddd97ee51a2ec44a80e6fb465f8574e
-      internalID: 1784103413
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: daisy_idle-Sheet_11
-      rect:
-        serializedVersion: 2
-        x: 726
-        y: 9
-        width: 19
-        height: 49
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42c7ef4640df3e84c8d6f071ff427f08
-      internalID: -2138797933
+      spriteID: f5b906fde743f4846baa7eb1838362a0
+      internalID: 1518981579
       vertices: []
       indices: 
       edges: []
@@ -385,18 +322,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      daisy_idle-Sheet_0: -1707383089
-      daisy_idle-Sheet_1: -1698358047
-      daisy_idle-Sheet_10: 1784103413
-      daisy_idle-Sheet_11: -2138797933
-      daisy_idle-Sheet_2: -1703426027
-      daisy_idle-Sheet_3: -916220624
-      daisy_idle-Sheet_4: -1971897611
-      daisy_idle-Sheet_5: 927950099
-      daisy_idle-Sheet_6: 790742674
-      daisy_idle-Sheet_7: -1126089547
-      daisy_idle-Sheet_8: -516593987
-      daisy_idle-Sheet_9: -1041723416
+      daisy_back_idle-Sheet_0: -677243616
+      daisy_back_idle-Sheet_1: 1337032725
+      daisy_back_idle-Sheet_2: -990969819
+      daisy_back_idle-Sheet_3: 151125322
+      daisy_back_idle-Sheet_4: 502748070
+      daisy_back_idle-Sheet_5: 1749851633
+      daisy_back_idle-Sheet_6: 1648620474
+      daisy_back_idle-Sheet_7: -174950572
+      daisy_back_idle-Sheet_8: 1518981579
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

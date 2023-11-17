@@ -1089,6 +1089,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1189492466}
   - component: {fileID: 1189492465}
+  - component: {fileID: 1189492467}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -1163,6 +1164,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1189492467
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189492464}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 39ea4e8003ee0b44ca98dc084f1b08cc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!224 &1297704524 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 9158475467253722746, guid: 0444ce038ee1aa245a1b299ddfbd658e, type: 3}
@@ -1334,6 +1356,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2777106705215372423, guid: aa99f495f4ec38f48be65c6e62f6ecb8, type: 3}
+      propertyPath: m_Size.x
+      value: 0.59375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2777106705215372423, guid: aa99f495f4ec38f48be65c6e62f6ecb8, type: 3}
+      propertyPath: m_Size.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2777106705215372423, guid: aa99f495f4ec38f48be65c6e62f6ecb8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1707383089, guid: c05a89b0fce2caa43be3355b89971c31, type: 3}
+    - target: {fileID: 2777106705215372423, guid: aa99f495f4ec38f48be65c6e62f6ecb8, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4373302874049405431, guid: aa99f495f4ec38f48be65c6e62f6ecb8, type: 3}
       propertyPath: slots.Array.data[0]
       value: 
@@ -1364,7 +1402,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5476274708531471375, guid: aa99f495f4ec38f48be65c6e62f6ecb8, type: 3}
       propertyPath: moveSpeed
-      value: 10
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6343944916122184705, guid: aa99f495f4ec38f48be65c6e62f6ecb8, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6343944916122184705, guid: aa99f495f4ec38f48be65c6e62f6ecb8, type: 3}
       propertyPath: m_CollisionDetection
