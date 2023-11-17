@@ -9,7 +9,6 @@ public class Quest : MonoBehaviour
     public float _countdown = default;
     public string[] _fişVersiyonları = new string[3];
     public bool questBitinceİtemSpawn = false;
-    public GameObject _istenenİtemPrefab = default;
     public GameObject _spawnlanacakİtemPrefab = default;
     void Start()
     {

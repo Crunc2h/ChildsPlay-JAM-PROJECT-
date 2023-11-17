@@ -85,7 +85,7 @@ public class QuestManager : MonoBehaviour
         _questActive = false;
         if(_doesQuestSpawnItem)
         {
-            Instantiate(spawnlanacakItemPrefab, transform.position, transform.rotation);
+            Instantiate(spawnlanacakItemPrefab, new Vector3(transform.position.x + 5, transform.position.y, transform.position.z), transform.rotation);
         }
         _currentQuestId++;
         Debug.Log("QuestSuccessful");
