@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d2f3d4861ed693c4ea20929de7cf619b
+guid: eb5f23e1ca312464993495b148b16d21
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -21,7 +21,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 1
+  isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Daisystands_0
+      name: daisy_right_animation-Sheet_0
       rect:
         serializedVersion: 2
-        x: 22
+        x: 24
         y: 9
-        width: 19
-        height: 46
+        width: 16
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39fbc6fceffc56142bf2b1b196ae912b
-      internalID: -2110952078
+      spriteID: fbcf1fce45be4714dbb7c0d34f9a98c5
+      internalID: 1014634426
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Daisystands_1
+      name: daisy_right_animation-Sheet_1
       rect:
         serializedVersion: 2
         x: 88
         y: 9
         width: 16
-        height: 46
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13e918a5b2b48344d9dc9bf5b1c0f35b
-      internalID: 814316540
+      spriteID: 90ef7ee508e04b145862bcc8c02a2301
+      internalID: 1656430696
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Daisystands_2
+      name: daisy_right_animation-Sheet_2
       rect:
         serializedVersion: 2
         x: 152
@@ -179,19 +179,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d9cbad1b4be0a24c8ae42db2c5e493f
-      internalID: -1900227838
+      spriteID: 50dff6f797ba7164fad2e6875bb1dab7
+      internalID: -756230210
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Daisystands_3
+      name: daisy_right_animation-Sheet_3
       rect:
         serializedVersion: 2
-        x: 215
-        y: 9
-        width: 19
+        x: 216
+        y: 10
+        width: 16
         height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -200,8 +200,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95ff297e1f6785742869cbccfecd988a
-      internalID: -1821103295
+      spriteID: 25c643c1b028e4e4291eb70e8332be66
+      internalID: -656429557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daisy_right_animation-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 10
+        width: 16
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 873d5bb64bf0cd244aad5cf3f3adfae5
+      internalID: -1173381881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daisy_right_animation-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 10
+        width: 16
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5547f5c20f556f34c93ae0708046756b
+      internalID: -566952843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daisy_right_animation-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 10
+        width: 16
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89b9471f99cb8494ea9cdfec3d8da0e6
+      internalID: 1170422772
       vertices: []
       indices: 
       edges: []
@@ -217,10 +280,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Daisystands_0: -2110952078
-      Daisystands_1: 814316540
-      Daisystands_2: -1900227838
-      Daisystands_3: -1821103295
+      daisy_right_animation-Sheet_0: 1014634426
+      daisy_right_animation-Sheet_1: 1656430696
+      daisy_right_animation-Sheet_2: -756230210
+      daisy_right_animation-Sheet_3: -656429557
+      daisy_right_animation-Sheet_4: -1173381881
+      daisy_right_animation-Sheet_5: -566952843
+      daisy_right_animation-Sheet_6: 1170422772
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

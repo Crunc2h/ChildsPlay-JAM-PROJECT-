@@ -10,6 +10,7 @@ TagManager:
   - InteractButton
   - InventorySlot
   - DropButton
+  - InteractableObject
   layers:
   - Default
   - TransparentFX

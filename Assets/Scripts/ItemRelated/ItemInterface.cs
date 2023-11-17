@@ -6,6 +6,6 @@ public interface ItemInterface
 {
     bool Usable { get; set; }
     bool Interactable { get; set; } 
-    void Use();
+    void Use(GameObject itemIconObject);
     void Interact();
 }

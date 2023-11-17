@@ -2,16 +2,21 @@
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UseOrInteract : MonoBehaviour
 {
     public void OnUserClick()
     {
         var itemReference = transform.GetComponentInParent<ItemReference>(false);
+        var parentSlot = transform.parent.transform.parent.gameObject;
+        var itemIconObject = parentSlot.transform.GetChild(1).gameObject;
+        var closeButton = transform.parent.transform.GetChild(3).gameObject;
         
         if(gameObject.tag == "UseButton")
         {
-            itemReference.currentItemReference.Use();
+            itemReference.currentItemReference.Use(itemIconObject);
+            closeButton.GetComponent<CloseTab>().CloseTabFunction();
         }
         else if(gameObject.tag == "InteractButton")
         {
@@ -19,7 +24,6 @@ public class UseOrInteract : MonoBehaviour
         }
         else if(gameObject.tag == "DropButton")
         {
-            var parentSlot = transform.parent.transform.parent.gameObject;
             var itemIcon = parentSlot.transform.GetChild(1).gameObject;
             var interactionTab = transform.parent.gameObject;
             var inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();           
