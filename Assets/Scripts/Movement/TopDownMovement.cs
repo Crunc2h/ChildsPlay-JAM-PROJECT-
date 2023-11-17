@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class TopDownMovement : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed = default;
-    void Update()
+    public float moveSpeed = 5f;
+    Vector2 _movement;
+    private Rigidbody2D rb;
+
+    void Start()
     {
-        float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
-        
-        transform.position = new Vector3(transform.position.x + horizontalInput * moveSpeed * Time.deltaTime, 
-            transform.position.y + verticalInput * moveSpeed * Time.deltaTime, 
-            transform.position.z);
+        rb = GetComponent<Rigidbody2D>();
     }
 
+    void Update()
+    {
+        _movement.x = Input.GetAxis("Horizontal");
+        _movement.y = Input.GetAxis("Vertical");      
+    }
+    private void FixedUpdate()
+    {
+        rb.MovePosition(rb.position + _movement * moveSpeed * Time.fixedDeltaTime);
+    }
 }
