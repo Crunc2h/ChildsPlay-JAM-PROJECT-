@@ -70,7 +70,9 @@ public class ReceiveInteraction : MonoBehaviour
         }
         var itemIcon = currentItemSlot.transform.GetChild(1).gameObject;
         Cursor.SetCursor(null, Vector2.zero, CursorMode.ForceSoftware);
-
+        _player.GetComponent<ItemInteraction>().interactionActive = false;
+        _player.GetComponent<ItemInteraction>().ActiveItemID = default;
+        GameObject.FindGameObjectWithTag("Player").GetComponent<ItemInteraction>().CurrentItemSlot = null;
         Destroy(itemIcon);
     }
     private void FailedInteraction()

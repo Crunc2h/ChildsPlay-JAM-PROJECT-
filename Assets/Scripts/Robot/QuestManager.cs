@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class QuestManager : MonoBehaviour
 {
@@ -23,17 +25,15 @@ public class QuestManager : MonoBehaviour
 
     void Update()
     {
+        AdjustCountdown();
         if(_questActive)
         {
             _timer -= Time.deltaTime;
-            if(_timer % 1 == 0)
-            {
-                Debug.Log(_timer);
-            }
             if(_timer <= 0)
             {
                 Debug.Log("QuestFailed");
                 CurrentAnger++;
+                AdjustAngerUI();
                 _questActive = false;
                 if(CurrentAnger >= 3)
                 {
@@ -83,12 +83,67 @@ public class QuestManager : MonoBehaviour
     private void QuestSuccessful()
     {
         _questActive = false;
+        if(CurrentAnger > 0)
+        {
+            CurrentAnger--;
+        }
         if(_doesQuestSpawnItem)
         {
             Instantiate(spawnlanacakItemPrefab, new Vector3(transform.position.x + 5, transform.position.y, transform.position.z), transform.rotation);
         }
+        var parentSlot = _player.GetComponent<ItemInteraction>().CurrentItemSlot;
+        var inventory = _player.GetComponent<Inventory>();
+        var itemIcon = parentSlot.transform.GetChild(1).gameObject;
+        
+        for (int i = 0; i < inventory.slots.Length; i++)
+        {
+            if (inventory.slots[i] == parentSlot)
+            {
+                inventory.isFull[i] = false;
+            }
+        }
         _currentQuestId++;
+        Destroy(itemIcon);
+        _player.GetComponent<ItemInteraction>().interactionActive = false;
+        _player.GetComponent<ItemInteraction>().ActiveItemID = default;
+        GameObject.FindGameObjectWithTag("Player").GetComponent<ItemInteraction>().CurrentItemSlot = null;
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.ForceSoftware);
         Debug.Log("QuestSuccessful");
         Debug.Log(_currentQuestId);
+    }
+
+    private void AdjustAngerUI()
+    {
+        var angerBar = GameObject.FindGameObjectWithTag("AngerBar");
+        for(int i = 0; i < 3; i++)
+        {
+            if(i <= CurrentAnger - 1)
+            {
+                angerBar.transform.GetChild(i).GetComponent<Image>().color = Color.red;
+            }
+            else
+            {
+                angerBar.transform.GetChild(i).GetComponent<Image>().color = Color.white;
+            }
+        }
+    }
+    private void AdjustCountdown()
+    {
+        if(_questActive)
+        {
+            if(!GameObject.FindGameObjectWithTag("Countdown").GetComponent<TextMeshProUGUI>().enabled)
+            {
+                GameObject.FindGameObjectWithTag("Countdown").GetComponent<TextMeshProUGUI>().enabled = true;
+            }
+            GameObject.FindGameObjectWithTag("Countdown").GetComponent<TextMeshProUGUI>().text = _timer.ToString();
+        }
+        else
+        {
+            if (GameObject.FindGameObjectWithTag("Countdown").GetComponent<TextMeshProUGUI>().enabled)
+            {
+                GameObject.FindGameObjectWithTag("Countdown").GetComponent<TextMeshProUGUI>().text = string.Empty;
+                GameObject.FindGameObjectWithTag("Countdown").GetComponent<TextMeshProUGUI>().enabled = false;
+            }
+        }
     }
 }

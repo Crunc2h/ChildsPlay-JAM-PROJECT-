@@ -12,6 +12,8 @@ TagManager:
   - DropButton
   - InteractableObject
   - Robot
+  - AngerBar
+  - Countdown
   layers:
   - Default
   - TransparentFX
