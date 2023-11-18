@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9126fd379a52c6a4c9583a24ad08aa2e
+guid: 8f0c7362434c2bb488fc10a5a9f695c1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,7 +121,70 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: burak_hali_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 9
+        width: 99
+        height: 494
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddf323486cca022449af088a2ea3f7e9
+      internalID: -770193319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burak_hali_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 384
+        width: 80
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2843333a16d3b444c84019b40f378094
+      internalID: 2059043175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burak_hali_2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 304
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e71288e02a4d70043a098def75830adc
+      internalID: -2061679172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +195,10 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      burak_hali_0: -770193319
+      burak_hali_1: 2059043175
+      burak_hali_2: -2061679172
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

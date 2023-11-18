@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5c154919313f89144977fa29b3f50238
+guid: 400d46af17c72e84687d5f115a884db2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,64 +123,190 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: burak_hali_0
+      name: second_floor_0
       rect:
         serializedVersion: 2
-        x: 30
-        y: 9
-        width: 99
-        height: 494
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 362d489b9a504524ba882dd3d5128a8c
-      internalID: 1313464324
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: burak_hali_1
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 384
-        width: 80
-        height: 112
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 35bddc7601465954cbb7a883b7c1a48b
-      internalID: -2025587616
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: burak_hali_2
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 304
+        x: 16
+        y: 322
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e720bd939a2d4c84db1e18856e30044d
-      internalID: 125355072
+      spriteID: 1dad1d4d5cb64044eb2d87d201ea2cfc
+      internalID: 68367262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_floor_1
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 322
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1470651c85c09a4da99d58c36b6e073
+      internalID: -1279294641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_floor_2
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 251
+        width: 84
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99abf8b2ba19eb24f848ccf7b5c5ceef
+      internalID: -1580455906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_floor_3
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 241
+        width: 51
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf83791d7a8ae37498df4c6b16cf4dcf
+      internalID: -287631281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_floor_4
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 169
+        width: 165
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 242a3848a5f0b514a9086d6bdce38ca9
+      internalID: 1452460831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_floor_5
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 106
+        width: 50
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60cc04855d7a8b74aa4999f26dd12793
+      internalID: 1771658279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_floor_6
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 22
+        width: 172
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 034e2bc52e80db44199301f1e020edc2
+      internalID: 346794033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_floor_7
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 5
+        width: 61
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41b599c356c89f84eb4a1664492fcb73
+      internalID: -16938589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_floor_8
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 4
+        width: 61
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc80f27fad11c84f99315636fedd936
+      internalID: 1474198240
       vertices: []
       indices: 
       edges: []
@@ -196,9 +322,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      burak_hali_0: 1313464324
-      burak_hali_1: -2025587616
-      burak_hali_2: 125355072
+      second_floor_0: 68367262
+      second_floor_1: -1279294641
+      second_floor_2: -1580455906
+      second_floor_3: -287631281
+      second_floor_4: 1452460831
+      second_floor_5: 1771658279
+      second_floor_6: 346794033
+      second_floor_7: -16938589
+      second_floor_8: 1474198240
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
