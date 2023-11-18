@@ -7,5 +7,4 @@ public class ItemInteraction : MonoBehaviour
     public int ActiveItemID { get; set; }
     public GameObject CurrentItemSlot;
     public bool interactionActive = false;    
-
 }

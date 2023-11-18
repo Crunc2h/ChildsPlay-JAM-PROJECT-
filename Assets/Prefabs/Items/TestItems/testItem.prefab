@@ -148,8 +148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c79741a5805ee148b20710b9029ae69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemId: 10
-  _isUsable: 0
+  ItemId: 12
+  _isUsable: 1
   _isInteractable: 0
   _itemPrefab: {fileID: 1126233082486000986}
   text: {fileID: 2800000, guid: 3102c415dd177e04780baf894644b21d, type: 3}

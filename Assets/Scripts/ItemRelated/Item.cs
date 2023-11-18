@@ -10,10 +10,10 @@ public class Item : MonoBehaviour, ItemInterface
     [SerializeField] private bool _isUsable = false;
     [SerializeField] private bool _isInteractable = false;
     [SerializeField] private GameObject _itemPrefab;
+    private ItemInteraction _playerItemInteraction;
     public Texture2D text;
     public bool Usable { get; set; }
     public bool Interactable { get; set; }
-  
     public void Interact()
     {
         Debug.Log("INTERACT");
@@ -22,21 +22,23 @@ public class Item : MonoBehaviour, ItemInterface
     {
         Debug.Log("USE");
         ChangeCursor(itemIconObject);
-        GameObject.FindGameObjectWithTag("Player").GetComponent<ItemInteraction>().interactionActive = true;
-        GameObject.FindGameObjectWithTag("Player").GetComponent<ItemInteraction>().ActiveItemID = ItemId;
-        GameObject.FindGameObjectWithTag("Player").GetComponent<ItemInteraction>().CurrentItemSlot = itemIconObject.transform.parent.gameObject;
+        SetItemInteractionProperties(itemIconObject);
     }
+
+    
+
     void Start()
     {
         Usable = _isUsable;
         Interactable = _isInteractable;
+        _playerItemInteraction = GameObject.FindGameObjectWithTag("Player").GetComponent<ItemInteraction>();
     }
 
-    private void ChangeCursor(GameObject itemIconObject)
+    private void ChangeCursor(GameObject itemIconObject) => Cursor.SetCursor(text, Vector2.zero, CursorMode.ForceSoftware);
+    private void SetItemInteractionProperties(GameObject itemIconObject)
     {
-        Cursor.visible = false;
-        Cursor.SetCursor(text, Vector2.zero, CursorMode.ForceSoftware);
-        Cursor.visible = true;
+        _playerItemInteraction.interactionActive = true;
+        _playerItemInteraction.ActiveItemID = ItemId;
+        _playerItemInteraction.CurrentItemSlot = itemIconObject.transform.parent.gameObject;
     }
-
 }

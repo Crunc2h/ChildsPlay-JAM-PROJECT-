@@ -7,69 +7,109 @@ using UnityEngine.UI;
 public class QuestManager : MonoBehaviour
 {
     public GameObject fişPrefab = null;
-    public Quest[] _allQuests = new Quest[16];
+    public float[] _sinireGöreGörevlerArasıCountdown = null;
     public int CurrentAnger { get; private set; } = 0;
-    private bool _questActive = false;
-    private bool _doesQuestSpawnItem = false;
-    private int _currentQuestId = default;
-    private float _currentQuestCountdown = default;
-    private int _currentlyExpectedItemId = default;
-    private GameObject spawnlanacakItemPrefab;
-    private float _timer = default;
-    private GameObject _player;
+    public Quest[] _allQuests = new Quest[16];
     
+
+    private int _currentQuestId = default;
+    private int _currentlyExpectedItemId = default;
+    private float _timer = default;
+    private float _currentQuestCountdown = default;
+    private bool _doesQuestSpawnItem = false;
+    private bool _questActive = false;
+    private bool _questCountdownOn = false;
+    private bool _interumCountdownOn = false;
+    private bool _takingQuest = false;
+    private string _currentFişString = string.Empty;
+    private GameObject spawnlanacakItemPrefab;
+
+    private GameObject _player;
+    private Animator _anim;
+    private TextMeshProUGUI _countdownTextMesh;
+
     void Start()
     {
         _player = GameObject.FindGameObjectWithTag("Player");
+        _countdownTextMesh = GameObject.FindGameObjectWithTag("Countdown").GetComponent<TextMeshProUGUI>();
+        _anim = GetComponent<Animator>();
     }
 
     void Update()
     {
         AdjustCountdown();
-        if(_questActive)
+        if(!_takingQuest)
         {
-            _timer -= Time.deltaTime;
-            if(_timer <= 0)
+            if (_interumCountdownOn && !_questActive)
             {
-                Debug.Log("QuestFailed");
-                CurrentAnger++;
-                AdjustAngerUI();
-                _questActive = false;
-                if(CurrentAnger >= 3)
+                _timer -= Time.deltaTime;
+                if (_timer <= 0)
                 {
-                    Debug.Log("GameOver");
+                    InterumFailure();
+                    if (CurrentAnger >= 3)
+                    {
+                        GameOver();
+                    }
+                }
+            }
+            else if (!_interumCountdownOn && _questActive)
+            {
+                _timer -= Time.deltaTime;
+                if (_timer <= 0)
+                {
+                    QuestFailure();
+                    if (CurrentAnger >= 3)
+                    {
+                        GameOver();
+                    }
                 }
             }
         }
+    }
+
+    private static void GameOver()
+    {
+        Debug.Log("GameOver");
+    }
+    private void QuestFailure()
+    {
+        Debug.Log("QuestFailed");
+        CurrentAnger++;
+        AdjustAngerUI();
+        _questActive = false;
+    }
+    private void InterumFailure()
+    {
+        CurrentAnger++;
+        AdjustAngerUI();
+        _interumCountdownOn = false;
     }
 
     public void PlayerClick()
     {
         if(!_questActive && !_player.GetComponent<ItemInteraction>().interactionActive)
         {
-            //Fiş textini belirle
-            var fisText = _allQuests[_currentQuestId]._fişVersiyonları[CurrentAnger];
-            _currentQuestCountdown = _allQuests[_currentQuestId]._countdown;
-            _currentlyExpectedItemId = _allQuests[_currentQuestId]._istenenItemId;
-            _doesQuestSpawnItem = _allQuests[_currentQuestId].questBitinceİtemSpawn;
-            spawnlanacakItemPrefab = _allQuests[_currentQuestId]._spawnlanacakİtemPrefab;
-            _timer = _currentQuestCountdown;;
+            _takingQuest = true;
+            GetQuestProperties();
+
+
 
 
             //Fiş textini spawnlanacak fiş prefabına ekle
+            
             //Fiş animasyonunu oynat
+            _anim.SetTrigger("FişAt");
 
             //Animasyon bitince fişi yerde spawnla
-            //Animasyon eventiyle questi başlat
-            StartQuest();
-            Debug.Log("QuestTaken");
-            Debug.Log(fisText);
-        }
-        else if(_questActive && 
-            _player.GetComponent<ItemInteraction>().interactionActive &&
-            _player.GetComponent<ItemInteraction>().ActiveItemID == _currentlyExpectedItemId)
-        {
             
+            
+            Debug.Log("QuestTaken");
+            Debug.Log(_currentFişString);
+        }
+        else if(_questActive 
+            && _player.GetComponent<ItemInteraction>().interactionActive 
+            && _player.GetComponent<ItemInteraction>().ActiveItemID == _currentlyExpectedItemId)
+        {     
             QuestSuccessful();
         }
         else
@@ -79,7 +119,22 @@ public class QuestManager : MonoBehaviour
         }
 
     }
-    private void StartQuest() => _questActive = true;
+
+    private void GetQuestProperties()
+    {
+        _currentFişString = _allQuests[_currentQuestId]._fişVersiyonları[CurrentAnger];
+        _currentQuestCountdown = _allQuests[_currentQuestId]._countdown;
+        _currentlyExpectedItemId = _allQuests[_currentQuestId]._istenenItemId;
+        _doesQuestSpawnItem = _allQuests[_currentQuestId].questBitinceİtemSpawn;
+        spawnlanacakItemPrefab = _allQuests[_currentQuestId]._spawnlanacakİtemPrefab;
+    }
+
+    public void StartQuest()
+    {
+        _questActive = true;
+        _interumCountdownOn = false;
+        _takingQuest = false;
+    }
     private void QuestSuccessful()
     {
         _questActive = false;
@@ -129,21 +184,35 @@ public class QuestManager : MonoBehaviour
     }
     private void AdjustCountdown()
     {
-        if(_questActive)
+        if(!_interumCountdownOn && !_questActive)
         {
-            if(!GameObject.FindGameObjectWithTag("Countdown").GetComponent<TextMeshProUGUI>().enabled)
+            if (!_countdownTextMesh.enabled)
             {
-                GameObject.FindGameObjectWithTag("Countdown").GetComponent<TextMeshProUGUI>().enabled = true;
+                _countdownTextMesh.enabled = true;
             }
-            GameObject.FindGameObjectWithTag("Countdown").GetComponent<TextMeshProUGUI>().text = _timer.ToString();
+            _interumCountdownOn = true;
+            _timer = _sinireGöreGörevlerArasıCountdown[CurrentAnger];
+        }
+
+        if (!_interumCountdownOn && _questActive)
+        {
+            if (!_countdownTextMesh.enabled)
+            {
+                _countdownTextMesh.enabled = true;
+            }
+            if(!_questCountdownOn)
+            {
+                _questCountdownOn = true;
+                _timer = _currentQuestCountdown;
+            }
+        }
+        if(!_takingQuest)
+        {
+            _countdownTextMesh.text = _timer.ToString();
         }
         else
         {
-            if (GameObject.FindGameObjectWithTag("Countdown").GetComponent<TextMeshProUGUI>().enabled)
-            {
-                GameObject.FindGameObjectWithTag("Countdown").GetComponent<TextMeshProUGUI>().text = string.Empty;
-                GameObject.FindGameObjectWithTag("Countdown").GetComponent<TextMeshProUGUI>().enabled = false;
-            }
+            _countdownTextMesh.text = string.Empty;
         }
     }
 }

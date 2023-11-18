@@ -104,6 +104,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "fi\u015FPrefab": {fileID: 0}
+  "_sinireG\xF6reG\xF6revlerAras\u0131Countdown":
+  - 31
+  - 21
+  - 11
+  - 1
   _allQuests:
   - {fileID: 1669993252430822545}
   - {fileID: 7005243158374757434}
@@ -134,8 +139,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _questId: 1
-  _istenenItemId: 13
-  _countdown: 30
+  _istenenItemId: 12
+  _countdown: 20
   "_fi\u015FVersiyonlar\u0131":
   - annen
   - baban
@@ -259,8 +264,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _questId: 0
-  _istenenItemId: 12
-  _countdown: 15
+  _istenenItemId: 10
+  _countdown: 10
   "_fi\u015FVersiyonlar\u0131":
   - ananas
   - selami

@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class PickUp : MonoBehaviour
 {
-    private float _minimumInteractionDistance = 2f;
-    private Inventory _inventory = null;
-    
     public GameObject itemIcon;
     public GameObject itemPrefab;
+    private Inventory _inventory = null;
+    private float _minimumInteractionDistance = 2f;
 
     void Start()
     {
@@ -49,7 +48,7 @@ public class PickUp : MonoBehaviour
                 _inventory.slots[i].GetComponent<ItemReference>().currentItemReference = gameObject.GetComponent<Item>();
                 
                 //itemi yok etmeden önce item prefabını instantiatleyip deaktive et droplanırsa sonradan spawn edebilmek için
-                _inventory.slots[i].GetComponent<ItemReference>().itemPrefab = GameObject.Instantiate(itemPrefab);
+                _inventory.slots[i].GetComponent<ItemReference>().itemPrefab = Instantiate(itemPrefab);
                 _inventory.slots[i].GetComponent<ItemReference>().itemPrefab.SetActive(false);
                 
                 //item iconunu spawnla

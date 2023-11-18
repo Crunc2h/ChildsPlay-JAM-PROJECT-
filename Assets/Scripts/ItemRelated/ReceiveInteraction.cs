@@ -7,16 +7,16 @@ public class ReceiveInteraction : MonoBehaviour
 {
     public int[] RelevantItemIDs;
     private GameObject _player;
+    private ItemInteraction _playerItemInteraction;
     private GameObject _currentItemSlot;
     [SerializeField] private float _minimumInteractionDistance;
     
-    // Start is called before the first frame update
     void Start()
     {
         _player = GameObject.FindGameObjectWithTag("Player").gameObject;
+        _playerItemInteraction = _player.GetComponent<ItemInteraction>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(CheckInteractionDistance())
@@ -33,10 +33,10 @@ public class ReceiveInteraction : MonoBehaviour
 
             if (hit.collider != null && hit.collider.tag == "InteractableObject")
             {
-                if(_player.GetComponent<ItemInteraction>().interactionActive &&
-                    RelevantItemIDs.Contains(_player.GetComponent<ItemInteraction>().ActiveItemID))
+                if(_playerItemInteraction.interactionActive &&
+                    RelevantItemIDs.Contains(_playerItemInteraction.ActiveItemID))
                 {
-                    SuccessfulInteraction(_player.GetComponent<ItemInteraction>().CurrentItemSlot);
+                    SuccessfulInteraction(_playerItemInteraction.CurrentItemSlot);
                 }
                 else
                 {
@@ -56,25 +56,39 @@ public class ReceiveInteraction : MonoBehaviour
     private void SuccessfulInteraction(GameObject currentItemSlot)
     {
         Debug.Log("Success!!");
-        //Destroy icon
-        
-        
+
         //Empty slot
-        for(int i = 0; i < _player.GetComponent<Inventory>().slots.Count(); i++)
+        EmptyInventorySlot(currentItemSlot);
+        ResetCursor();
+        ResetItemInteractionProperties();
+
+        //Destroy icon
+        var itemIcon = currentItemSlot.transform.GetChild(1).gameObject;
+        Destroy(itemIcon);
+    }
+    private static void ResetCursor()
+    {
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.ForceSoftware);
+    }
+    private void ResetItemInteractionProperties()
+    {
+        _playerItemInteraction.interactionActive = false;
+        _playerItemInteraction.ActiveItemID = default;
+        _playerItemInteraction.CurrentItemSlot = null;
+    }
+
+    private void EmptyInventorySlot(GameObject currentItemSlot)
+    {
+        for (int i = 0; i < _player.GetComponent<Inventory>().slots.Count(); i++)
         {
-            if(currentItemSlot == _player.GetComponent<Inventory>().slots[i])
+            if (currentItemSlot == _player.GetComponent<Inventory>().slots[i])
             {
                 _player.GetComponent<Inventory>().isFull[i] = false;
                 break;
             }
         }
-        var itemIcon = currentItemSlot.transform.GetChild(1).gameObject;
-        Cursor.SetCursor(null, Vector2.zero, CursorMode.ForceSoftware);
-        _player.GetComponent<ItemInteraction>().interactionActive = false;
-        _player.GetComponent<ItemInteraction>().ActiveItemID = default;
-        GameObject.FindGameObjectWithTag("Player").GetComponent<ItemInteraction>().CurrentItemSlot = null;
-        Destroy(itemIcon);
     }
+
     private void FailedInteraction()
     {
         Debug.Log("Failure!!");

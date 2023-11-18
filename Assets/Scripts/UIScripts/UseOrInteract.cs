@@ -8,8 +8,8 @@ public class UseOrInteract : MonoBehaviour
 {
     public void OnUserClick()
     {
-        var itemReference = transform.GetComponentInParent<ItemReference>(false);
         var parentSlot = transform.parent.transform.parent.gameObject;
+        var itemReference = transform.GetComponentInParent<ItemReference>(false);
         var itemIconObject = parentSlot.transform.GetChild(1).gameObject;
         var closeButton = transform.parent.transform.GetChild(3).gameObject;
         
@@ -26,25 +26,34 @@ public class UseOrInteract : MonoBehaviour
         {
             var itemIcon = parentSlot.transform.GetChild(1).gameObject;
             var interactionTab = transform.parent.gameObject;
-            var inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();           
-            
+            var inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+
             //Slotu boşalt
-            for(int i = 0; i < inventory.slots.Length; i++)
-            {
-                if (inventory.slots[i] == parentSlot)
-                {
-                    inventory.isFull[i] = false;
-                }
-            }
-            
+            EmptyInventorySlot(parentSlot, inventory);
+
             //item prefabını player pozisyonuna getir ve aktive et
-            parentSlot.GetComponent<ItemReference>().itemPrefab.transform.position = new Vector3(GameObject.FindGameObjectWithTag("Player").transform.position.x,
-                GameObject.FindGameObjectWithTag("Player").transform.position.y, transform.position.z);         
-            parentSlot.GetComponent<ItemReference>().itemPrefab.SetActive(true);
-            
+            SpawnItemPrefab(parentSlot);
+
             //ikonu sil ve interaksyon pop-upunu kapa
             Destroy(itemIcon);
             interactionTab.SetActive(false);
         }
+    }
+
+    private static void EmptyInventorySlot(GameObject parentSlot, Inventory inventory)
+    {
+        for (int i = 0; i < inventory.slots.Length; i++)
+        {
+            if (inventory.slots[i] == parentSlot)
+            {
+                inventory.isFull[i] = false;
+            }
+        }
+    }
+    private void SpawnItemPrefab(GameObject parentSlot)
+    {
+        parentSlot.GetComponent<ItemReference>().itemPrefab.transform.position = new Vector3(GameObject.FindGameObjectWithTag("Player").transform.position.x,
+                        GameObject.FindGameObjectWithTag("Player").transform.position.y, transform.position.z);
+        parentSlot.GetComponent<ItemReference>().itemPrefab.SetActive(true);
     }
 }
