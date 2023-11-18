@@ -16,6 +16,7 @@ public class EnableInteractionsTab : MonoBehaviour
     }
     public void OpenInteractionTab()
     {
+        Debug.Log("HELLO");
         RestartItemInteractionProperties();
         CheckAndCloseIfAnyTabOpen();
         ResetCursor();

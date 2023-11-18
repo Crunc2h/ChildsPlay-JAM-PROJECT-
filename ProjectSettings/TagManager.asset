@@ -50,6 +50,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BELOWFLOOR
+    uniqueID: 3271565047
+    locked: 0
   - name: Floor
     uniqueID: 3554550895
     locked: 0
