@@ -10,8 +10,9 @@ public class QuestManager : MonoBehaviour
     public float[] _sinireGöreGörevlerArasıCountdown = null;
     public int CurrentAnger { get; private set; } = 0;
     public Quest[] _allQuests = new Quest[16];
-    
 
+
+    public string _currentFişString { get; private set; } = string.Empty;
     private int _currentQuestId = default;
     private int _currentlyExpectedItemId = default;
     private float _timer = default;
@@ -21,7 +22,7 @@ public class QuestManager : MonoBehaviour
     private bool _questCountdownOn = false;
     private bool _interumCountdownOn = false;
     private bool _takingQuest = false;
-    private string _currentFişString = string.Empty;
+    
     private GameObject spawnlanacakItemPrefab;
 
     private GameObject _player;
@@ -95,12 +96,11 @@ public class QuestManager : MonoBehaviour
 
 
 
-            //Fiş textini spawnlanacak fiş prefabına ekle
+
             
             //Fiş animasyonunu oynat
             _anim.SetTrigger("FişAt");
 
-            //Animasyon bitince fişi yerde spawnla
             
             
             Debug.Log("QuestTaken");
@@ -134,6 +134,8 @@ public class QuestManager : MonoBehaviour
         _questActive = true;
         _interumCountdownOn = false;
         _takingQuest = false;
+        var newfişToSpawn = Instantiate(fişPrefab, new Vector3(transform.position.x, transform.position.y - 1, transform.position.z), Quaternion.identity);
+        newfişToSpawn.SetActive(true);
     }
     private void QuestSuccessful()
     {

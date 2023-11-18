@@ -14,6 +14,8 @@ TagManager:
   - Robot
   - AngerBar
   - Countdown
+  - fish
+  - canvas
   layers:
   - Default
   - TransparentFX

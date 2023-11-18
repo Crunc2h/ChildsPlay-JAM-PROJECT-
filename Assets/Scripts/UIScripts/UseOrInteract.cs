@@ -20,7 +20,7 @@ public class UseOrInteract : MonoBehaviour
         }
         else if(gameObject.tag == "InteractButton")
         {
-            itemReference.currentItemReference.Interact();
+            itemReference.currentItemReference.Interact(parentSlot);
         }
         else if(gameObject.tag == "DropButton")
         {

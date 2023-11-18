@@ -1,5 +1,6 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -14,9 +15,10 @@ public class Item : MonoBehaviour, ItemInterface
     public Texture2D text;
     public bool Usable { get; set; }
     public bool Interactable { get; set; }
-    public void Interact()
+    public void Interact(GameObject parentSlot)
     {
         Debug.Log("INTERACT");
+        OpenFişTab(parentSlot);
     }
     public void Use(GameObject itemIconObject)
     {
@@ -40,5 +42,19 @@ public class Item : MonoBehaviour, ItemInterface
         _playerItemInteraction.interactionActive = true;
         _playerItemInteraction.ActiveItemID = ItemId;
         _playerItemInteraction.CurrentItemSlot = itemIconObject.transform.parent.gameObject;
+    }
+
+    private void OpenFişTab(GameObject parentSlot)
+    {
+        var fişTab = GameObject.FindGameObjectWithTag("canvas").transform.GetChild(0).gameObject;
+        fişTab.SetActive(true);
+        var text = fişTab.transform.GetChild(0).gameObject;
+        var currentQuestText = GameObject.FindGameObjectWithTag("Robot").GetComponent<QuestManager>()._currentFişString;
+        text.GetComponent<TextMeshProUGUI>().text = currentQuestText;
+        var interactionTab = parentSlot.transform.GetChild(0).gameObject;
+        if(interactionTab.activeSelf)
+        {
+            interactionTab.SetActive(false);
+        }
     }
 }
