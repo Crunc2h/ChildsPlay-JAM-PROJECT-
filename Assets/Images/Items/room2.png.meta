@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b9003f349cfe2624d82e9725ab3a47ec
+guid: d330c7061c29cbc46884644ecbec08d2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite-0006-Sheet_0
+      name: room2_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 24
+        x: 16
+        y: 204
         width: 96
-        height: 73
+        height: 99
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,19 +137,82 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bbbed2f2a3993d245a1e10649306af3e
-      internalID: 902542061
+      spriteID: a779c4c3845f65c46b553fbda8aa8e07
+      internalID: 1669232958
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-0006-Sheet_1
+      name: room2_1
       rect:
         serializedVersion: 2
-        x: 132
-        y: 24
-        width: 96
+        x: 254
+        y: 231
+        width: 66
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1359449e86288e845989590fffee29e8
+      internalID: 875074379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room2_2
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 109
+        width: 154
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec270950146996444bcd77687b7b49a3
+      internalID: -1792501564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room2_3
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 15
+        width: 37
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fcd4edc637da824cb467f9bd32eba59
+      internalID: 962145834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room2_4
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 15
+        width: 105
         height: 71
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -158,92 +221,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3902419c0fe52c4a9eabdf784db467d
-      internalID: -1539527920
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite-0006-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 252
-        y: 24
-        width: 96
-        height: 73
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e1c3ba9857fd8de45af7954458b8a43b
-      internalID: -244787889
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite-0006-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 372
-        y: 24
-        width: 96
-        height: 71
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 072d82567aba37045933bad399c056b7
-      internalID: 1243381951
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite-0006-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 492
-        y: 24
-        width: 96
-        height: 73
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4b336508f1699964d82f439889bf5ede
-      internalID: 1593294802
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite-0006-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 612
-        y: 24
-        width: 96
-        height: 71
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a4aa7856511b2594b9c6a1a52e62ccf7
-      internalID: 171436242
+      spriteID: 6053a0b24524f3f44b94cdc8db9241fa
+      internalID: 1158967315
       vertices: []
       indices: 
       edges: []
@@ -259,12 +238,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sprite-0006-Sheet_0: 902542061
-      Sprite-0006-Sheet_1: -1539527920
-      Sprite-0006-Sheet_2: -244787889
-      Sprite-0006-Sheet_3: 1243381951
-      Sprite-0006-Sheet_4: 1593294802
-      Sprite-0006-Sheet_5: 171436242
+      room2_0: 1669232958
+      room2_1: 875074379
+      room2_2: -1792501564
+      room2_3: 962145834
+      room2_4: 1158967315
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

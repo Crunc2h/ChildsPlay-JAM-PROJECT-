@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b9003f349cfe2624d82e9725ab3a47ec
+guid: 804bb2563ccbcaa43916bd23723b789c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -123,127 +123,190 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite-0006-Sheet_0
+      name: robot_fis_aniamation-Sheet_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 24
-        width: 96
-        height: 73
+        x: 11
+        y: 2
+        width: 42
+        height: 61
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bbbed2f2a3993d245a1e10649306af3e
-      internalID: 902542061
+      spriteID: ba74d3418a257b24d92a814a0ee0068e
+      internalID: -594267410
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-0006-Sheet_1
+      name: robot_fis_aniamation-Sheet_1
       rect:
         serializedVersion: 2
-        x: 132
-        y: 24
-        width: 96
-        height: 71
+        x: 75
+        y: 1
+        width: 42
+        height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3902419c0fe52c4a9eabdf784db467d
-      internalID: -1539527920
+      spriteID: 8aef080aaa0d546429ce1094a038f959
+      internalID: -1896217854
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-0006-Sheet_2
+      name: robot_fis_aniamation-Sheet_2
       rect:
         serializedVersion: 2
-        x: 252
-        y: 24
-        width: 96
-        height: 73
+        x: 139
+        y: 1
+        width: 42
+        height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1c3ba9857fd8de45af7954458b8a43b
-      internalID: -244787889
+      spriteID: f0e19b9952d2bfd44893f86021dc9bc4
+      internalID: -1983701072
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-0006-Sheet_3
+      name: robot_fis_aniamation-Sheet_3
       rect:
         serializedVersion: 2
-        x: 372
-        y: 24
-        width: 96
-        height: 71
+        x: 203
+        y: 1
+        width: 42
+        height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 072d82567aba37045933bad399c056b7
-      internalID: 1243381951
+      spriteID: 2117af513aa171346a6c0a3b2d4a4e2f
+      internalID: 1827514405
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-0006-Sheet_4
+      name: robot_fis_aniamation-Sheet_4
       rect:
         serializedVersion: 2
-        x: 492
-        y: 24
-        width: 96
-        height: 73
+        x: 267
+        y: 1
+        width: 42
+        height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b336508f1699964d82f439889bf5ede
-      internalID: 1593294802
+      spriteID: 08e1985c2da5fc14a9dbccd6f0570a3a
+      internalID: 1380697599
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-0006-Sheet_5
+      name: robot_fis_aniamation-Sheet_5
       rect:
         serializedVersion: 2
-        x: 612
-        y: 24
-        width: 96
-        height: 71
+        x: 331
+        y: 1
+        width: 42
+        height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4aa7856511b2594b9c6a1a52e62ccf7
-      internalID: 171436242
+      spriteID: 09d44eb3bbed90e40a18f7f04351fed6
+      internalID: 812893495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_fis_aniamation-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 1
+        width: 42
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48e13eac72edbba418c8fc659c7a7689
+      internalID: -243553737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_fis_aniamation-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 0
+        width: 42
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a876ce72fe751c54291dc0e298eff607
+      internalID: 1847073622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_fis_aniamation-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 1
+        width: 42
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f87200c5863a75b41817154345c9f41a
+      internalID: 1114762882
       vertices: []
       indices: 
       edges: []
@@ -259,12 +322,24 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sprite-0006-Sheet_0: 902542061
-      Sprite-0006-Sheet_1: -1539527920
-      Sprite-0006-Sheet_2: -244787889
-      Sprite-0006-Sheet_3: 1243381951
-      Sprite-0006-Sheet_4: 1593294802
-      Sprite-0006-Sheet_5: 171436242
+      robot_fis_aniamation-Sheet_0: -594267410
+      robot_fis_aniamation-Sheet_1: -1896217854
+      robot_fis_aniamation-Sheet_10: 1531335610
+      robot_fis_aniamation-Sheet_11: -946940351
+      robot_fis_aniamation-Sheet_12: -131361994
+      robot_fis_aniamation-Sheet_13: 1878115750
+      robot_fis_aniamation-Sheet_14: -1276651780
+      robot_fis_aniamation-Sheet_15: 1935611520
+      robot_fis_aniamation-Sheet_16: -403459433
+      robot_fis_aniamation-Sheet_17: 1910526671
+      robot_fis_aniamation-Sheet_2: -1983701072
+      robot_fis_aniamation-Sheet_3: 1827514405
+      robot_fis_aniamation-Sheet_4: 1380697599
+      robot_fis_aniamation-Sheet_5: 812893495
+      robot_fis_aniamation-Sheet_6: -243553737
+      robot_fis_aniamation-Sheet_7: 1847073622
+      robot_fis_aniamation-Sheet_8: 1114762882
+      robot_fis_aniamation-Sheet_9: -1440677474
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
