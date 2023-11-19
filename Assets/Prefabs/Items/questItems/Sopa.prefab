@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 179741aa9deb5624189845cf58759238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemIcon: {fileID: 0}
+  itemIcon: {fileID: 2443471270557253543, guid: 9da699728ddb11640882ed166e546685, type: 3}
   itemPrefab: {fileID: 9013240859857154428}
 --- !u!58 &2594040540716027042
 CircleCollider2D:
