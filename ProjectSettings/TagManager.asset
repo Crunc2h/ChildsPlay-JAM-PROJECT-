@@ -16,6 +16,8 @@ TagManager:
   - Countdown
   - fish
   - canvas
+  - Camera
+  - Door
   layers:
   - Default
   - TransparentFX

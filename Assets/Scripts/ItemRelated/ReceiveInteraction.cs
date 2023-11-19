@@ -44,6 +44,18 @@ public class ReceiveInteraction : MonoBehaviour
                 }
             }
 
+            if(hit.collider != null && hit.collider.tag == "Door")
+            {
+                if(!hit.collider.gameObject.GetComponent<DoorState>()._doorLocked)
+                {
+                    hit.collider.gameObject.GetComponent<DoorState>().Teleport();
+                }
+                else
+                {
+                    hit.collider.gameObject.GetComponent<DoorState>().FailToOpenDoor();
+                }
+            }
+
             if(hit.collider != null && hit.collider.tag == "Robot")
             {
                 GameObject.FindGameObjectWithTag("Robot").GetComponent<QuestManager>().PlayerClick();
