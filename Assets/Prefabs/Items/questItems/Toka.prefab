@@ -74,9 +74,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1086583973
+  m_SortingLayer: 1
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: f69055c4e834aa74ea65ecded6f2561b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -154,6 +154,7 @@ MonoBehaviour:
   _isUsable: 1
   _isInteractable: 0
   _itemPrefab: {fileID: 6654431674336954449}
+  "_openFi\u015F": {fileID: 0}
   cursorTexture: {fileID: 2800000, guid: 5e0eaaaf6eb95fb49b9b614b85f77b33, type: 3}
 --- !u!82 &2741204268138391263
 AudioSource:

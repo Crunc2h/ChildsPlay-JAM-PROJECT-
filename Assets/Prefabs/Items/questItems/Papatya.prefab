@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 2690289564815083816}
   - component: {fileID: 7709902674277350373}
   - component: {fileID: 2475941717256480181}
-  - component: {fileID: 4563502807618271292}
   - component: {fileID: 4897432764442649056}
   - component: {fileID: 2195757314603586549}
+  - component: {fileID: 2868691908015079729}
   m_Layer: 0
   m_Name: Papatya
   m_TagString: Item
@@ -74,9 +74,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1086583973
+  m_SortingLayer: 1
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 2bda42ffd14b6e14882f2d4f8d43f282, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -103,41 +103,6 @@ MonoBehaviour:
   itemIcon: {fileID: 443651221550494443, guid: e3b46797548916c4db24460b3af56f5d, type: 3}
   itemPrefab: {fileID: 5245536529522565923}
   _pickUpSFX: {fileID: 4229682058047049279, guid: 98e812016131c0043816f759b56867d6, type: 3}
---- !u!58 &4563502807618271292
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5245536529522565923}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.005758047, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.30711102
 --- !u!114 &4897432764442649056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154,6 +119,7 @@ MonoBehaviour:
   _isUsable: 1
   _isInteractable: 0
   _itemPrefab: {fileID: 5245536529522565923}
+  "_openFi\u015F": {fileID: 0}
   cursorTexture: {fileID: 2800000, guid: b0b8c8429e9e20b479b6ce62abd834e6, type: 3}
 --- !u!82 &2195757314603586549
 AudioSource:
@@ -251,3 +217,48 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!61 &2868691908015079729
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5245536529522565923}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.06403637, y: 0.044125795}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.4380684, y: 1.4842174}
+  m_EdgeRadius: 0
