@@ -7,6 +7,7 @@ public class PickUp : MonoBehaviour
     public GameObject itemIcon;
     public GameObject itemPrefab;
     private Inventory _inventory = null;
+    [SerializeField] private AudioSource _pickUpSFX = null;
     private float _minimumInteractionDistance = 2f;
 
     void Start()
@@ -53,7 +54,6 @@ public class PickUp : MonoBehaviour
                 
                 //item iconunu spawnla
                 Instantiate(itemIcon, _inventory.slots[i].transform, false);
-                
                 Destroy(item);
                 break;
             }

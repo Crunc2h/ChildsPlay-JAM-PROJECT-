@@ -9,6 +9,7 @@ public class ReceiveInteraction : MonoBehaviour
     private GameObject _player;
     private ItemInteraction _playerItemInteraction;
     private GameObject _currentItemSlot;
+    [SerializeField] private AudioSource _interactionSFX = null;
     [SerializeField] private float _minimumInteractionDistance;
     
     void Start()
@@ -21,10 +22,10 @@ public class ReceiveInteraction : MonoBehaviour
     {
         if(CheckInteractionDistance())
         {
-            CheckMouseClick();
+            StartCoroutine(CheckMouseClick());
         }
     }
-    private void CheckMouseClick()
+    private IEnumerator CheckMouseClick()
     {
         if(Input.GetMouseButtonDown(0))
         {
@@ -46,6 +47,7 @@ public class ReceiveInteraction : MonoBehaviour
 
             if(hit.collider != null && hit.collider.tag == "Door")
             {
+                
                 if(!hit.collider.gameObject.GetComponent<DoorState>()._doorLocked)
                 {
                     hit.collider.gameObject.GetComponent<DoorState>().Teleport();
@@ -63,12 +65,15 @@ public class ReceiveInteraction : MonoBehaviour
 
             if (hit.collider != null && hit.collider.tag == "Cat")
             {
+                _interactionSFX.Play();
                 var allItems = GameObject.FindGameObjectsWithTag("Item");
                 var kediTüyleri = allItems.Where(_item => _item.GetComponent<Item>().GetItemId() == 6);
                 kediTüyleri.First().transform.position = transform.position;
                 //kedi ölme sfx
+                gameObject.GetComponent<SpriteRenderer>().enabled = false;
+                gameObject.GetComponent<BoxCollider2D>().enabled = false;
+                yield return new WaitForSeconds(2);
                 Destroy(gameObject);
-
             }
         }
     }

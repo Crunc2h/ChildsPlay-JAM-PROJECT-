@@ -13,6 +13,7 @@ public class Item : MonoBehaviour, ItemInterface
     [SerializeField] private bool _isInteractable = false;
     [SerializeField] private GameObject _itemPrefab;
     private ItemInteraction _playerItemInteraction;
+    [SerializeField] private AudioSource _openFiş = null;
     public Texture2D cursorTexture;
     public bool Usable { get; set; }
     public bool Interactable { get; set; }

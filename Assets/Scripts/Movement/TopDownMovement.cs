@@ -7,7 +7,9 @@ public class TopDownMovement : MonoBehaviour
     public float moveSpeed = 5f;
     Vector2 _movement;
     private Rigidbody2D rb;
+    [SerializeField] private AudioSource _walkingSound = null;
     private bool _isMoving = false;
+    private bool _walkAudioPlaying = false;
     private Direction direction = Direction.Right;
     private Animator _anim;
 
@@ -53,6 +55,17 @@ public class TopDownMovement : MonoBehaviour
 
         _anim.SetInteger("direction", (int)direction);
         _anim.SetBool("isMoving", _isMoving);
+
+        if(_isMoving && !_walkAudioPlaying)
+        {
+            _walkAudioPlaying = true;
+            _walkingSound.Play();
+        }
+        else if(!_isMoving && _walkAudioPlaying)
+        {
+            _walkAudioPlaying = false;
+            _walkingSound.Pause();
+        }
     }
     private void FixedUpdate()
     {

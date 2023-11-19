@@ -4,6 +4,7 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class QuestManager : MonoBehaviour
 {
@@ -12,7 +13,10 @@ public class QuestManager : MonoBehaviour
     public int[] _changeStateItemIds = null;
     public int CurrentAnger { get; private set; } = 0;
     public Quest[] _allQuests = new Quest[16];
-
+    [SerializeField] private AudioSource _countdownSFX = null;
+    [SerializeField] private AudioSource _angerBarSFX = null;
+    [SerializeField] private AudioSource _startQuest = null;
+    [SerializeField] private AudioSource _fişGiveOut = null;
 
     public string _currentFişString { get; private set; } = string.Empty;
     private int _stateNumber = 0;
@@ -78,6 +82,7 @@ public class QuestManager : MonoBehaviour
     private static void GameOver()
     {
         Debug.Log("GameOver");
+        SceneManager.LoadScene(2);
     }
     private void QuestFailure()
     {
@@ -97,7 +102,7 @@ public class QuestManager : MonoBehaviour
     {
         Debug.Log(_player.GetComponent<ItemInteraction>().interactionActive);
         Debug.Log(_player.GetComponent<ItemInteraction>().ActiveItemID);
-        if (!_questActive && !_player.GetComponent<ItemInteraction>().interactionActive)
+        if (!_questActive && !_player.GetComponent<ItemInteraction>().interactionActive && !_takingQuest)
         {
             _takingQuest = true;
             GetQuestProperties();
@@ -110,7 +115,7 @@ public class QuestManager : MonoBehaviour
 
             //Fiş animasyonunu oynat
             _anim.SetTrigger("FişAt");
-
+            _fişGiveOut.Play();
             
             
             Debug.Log("QuestTaken");
@@ -151,6 +156,7 @@ public class QuestManager : MonoBehaviour
         _takingQuest = false;
         var newfişToSpawn = Instantiate(fişPrefab, new Vector3(transform.position.x, transform.position.y - 1, transform.position.z), Quaternion.identity);
         newfişToSpawn.SetActive(true);
+        _startQuest.Play();
     }
     private void QuestSuccessful()
     {
@@ -174,6 +180,10 @@ public class QuestManager : MonoBehaviour
                 inventory.isFull[i] = false;
             }
         }
+        if(_currentQuestId == _allQuests.Length -1)
+        {
+            GameWon();
+        }
         _currentQuestId++;
         Destroy(itemIcon);
         _player.GetComponent<ItemInteraction>().interactionActive = false;
@@ -194,6 +204,7 @@ public class QuestManager : MonoBehaviour
                 Color darkRed = new Color(109, 0, 0);
                 darkRed.a = 1;
                 angerBar.transform.GetChild(i).GetComponent<Image>().color = darkRed;
+                _angerBarSFX.Play();
 
             }
             else
@@ -236,5 +247,19 @@ public class QuestManager : MonoBehaviour
         {
             _countdownTextMesh.text = string.Empty;
         }
+
+        if(!_takingQuest && !_countdownSFX.isPlaying)
+        {
+            _countdownSFX.Play();
+        }
+        else if(_takingQuest && _countdownSFX.isPlaying)
+        {
+            _countdownSFX.Pause();
+        }
+    }
+
+    private void GameWon()
+    {
+        SceneManager.LoadScene(3);
     }
 }
