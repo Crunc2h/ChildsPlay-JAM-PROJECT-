@@ -88,16 +88,19 @@ public class QuestManager : MonoBehaviour
 
     public void PlayerClick()
     {
-        if(!_questActive && !_player.GetComponent<ItemInteraction>().interactionActive)
+        Debug.Log(_player.GetComponent<ItemInteraction>().interactionActive);
+        Debug.Log(_player.GetComponent<ItemInteraction>().ActiveItemID);
+        if (!_questActive && !_player.GetComponent<ItemInteraction>().interactionActive)
         {
             _takingQuest = true;
             GetQuestProperties();
+            Debug.Log(_currentlyExpectedItemId);
 
 
 
 
 
-            
+
             //Fiş animasyonunu oynat
             _anim.SetTrigger("FişAt");
 

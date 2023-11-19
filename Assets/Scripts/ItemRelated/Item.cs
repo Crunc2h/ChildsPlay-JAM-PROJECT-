@@ -12,7 +12,7 @@ public class Item : MonoBehaviour, ItemInterface
     [SerializeField] private bool _isInteractable = false;
     [SerializeField] private GameObject _itemPrefab;
     private ItemInteraction _playerItemInteraction;
-    public Texture2D text;
+    public Texture2D cursorTexture;
     public bool Usable { get; set; }
     public bool Interactable { get; set; }
     public void Interact(GameObject parentSlot)
@@ -36,7 +36,7 @@ public class Item : MonoBehaviour, ItemInterface
         _playerItemInteraction = GameObject.FindGameObjectWithTag("Player").GetComponent<ItemInteraction>();
     }
 
-    private void ChangeCursor(GameObject itemIconObject) => Cursor.SetCursor(text, Vector2.zero, CursorMode.ForceSoftware);
+    private void ChangeCursor(GameObject itemIconObject) => Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.ForceSoftware);
     private void SetItemInteractionProperties(GameObject itemIconObject)
     {
         _playerItemInteraction.interactionActive = true;

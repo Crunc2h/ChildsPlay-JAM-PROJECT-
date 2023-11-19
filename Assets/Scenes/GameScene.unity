@@ -10236,6 +10236,59 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &370255231
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 370255232}
+  - component: {fileID: 370255233}
+  m_Layer: 0
+  m_Name: "G\xF6rev1"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &370255232
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370255231}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 605383634}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &370255233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370255231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4180d3320d947cf4582ca4decfaead9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _questId: 0
+  _istenenItemId: 1
+  _countdown: 60
+  "_fi\u015FVersiyonlar\u0131":
+  - "Bana giyebilece\u011Fim bir \u015Fey getirir misin?"
+  - "Bana giyebilece\u011Fim bir \u015Fey getirir misin?"
+  - "Bana giyebilece\u011Fim bir \u015Fey getirir misin?"
+  "questBitince\u0130temSpawn": 0
+  "_spawnlanacak\u0130temPrefab": {fileID: 0}
 --- !u!1 &378907278
 GameObject:
   m_ObjectHideFlags: 0
@@ -12777,6 +12830,60 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &516716943
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 516716944}
+  - component: {fileID: 516716945}
+  m_Layer: 0
+  m_Name: "G\xF6rev7"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &516716944
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516716943}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 605383634}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &516716945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516716943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4180d3320d947cf4582ca4decfaead9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _questId: 6
+  _istenenItemId: 7
+  _countdown: 60
+  "_fi\u015FVersiyonlar\u0131":
+  - "\u015Eimdi seninle renk bulma oyunu oynayaca\u011F\u0131z \xF6ncelikle k\u0131rm\u0131z\u0131
+    bir \u015Feye ihtiyac\u0131m var"
+  - "Bana kullanabilece\u011Fim k\u0131rm\u0131z\u0131 bir obje bul!"
+  - KIRMIZI!
+  "questBitince\u0130temSpawn": 0
+  "_spawnlanacak\u0130temPrefab": {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -13580,6 +13687,59 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 1.1273272}
   m_EdgeRadius: 0
+--- !u!1 &532886549
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 532886550}
+  - component: {fileID: 532886551}
+  m_Layer: 0
+  m_Name: "G\xF6rev8"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &532886550
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532886549}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 605383634}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &532886551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532886549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4180d3320d947cf4582ca4decfaead9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _questId: 7
+  _istenenItemId: 8
+  _countdown: 60
+  "_fi\u015FVersiyonlar\u0131":
+  - "\u015Eimdi de mavi bir \u015Fey bulman\u0131 istiyorum can\u0131m."
+  - "\u015Eimdi de mavi bir \u015Fey getir."
+  - "MAV\u0130!"
+  "questBitince\u0130temSpawn": 0
+  "_spawnlanacak\u0130temPrefab": {fileID: 0}
 --- !u!1 &539792268
 GameObject:
   m_ObjectHideFlags: 0
@@ -14802,6 +14962,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &605383633
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 605383634}
+  m_Layer: 0
+  m_Name: "G\xF6revler"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &605383634
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605383633}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -51.212772, y: -125.93714, z: -0.1417235}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 370255232}
+  - {fileID: 1088184793}
+  - {fileID: 1225831621}
+  - {fileID: 879600584}
+  - {fileID: 847796768}
+  - {fileID: 2047671000}
+  - {fileID: 516716944}
+  - {fileID: 532886550}
+  - {fileID: 1364407275}
+  - {fileID: 1824591014}
+  - {fileID: 1535852723}
+  - {fileID: 927026635}
+  - {fileID: 1772866253}
+  - {fileID: 705793884}
+  - {fileID: 1369664978}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &606380543
 GameObject:
   m_ObjectHideFlags: 0
@@ -17043,6 +17249,59 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.028171025, y: 0.5641275}
   m_EdgeRadius: 0
+--- !u!1 &705793883
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 705793884}
+  - component: {fileID: 705793885}
+  m_Layer: 0
+  m_Name: "G\xF6rev14"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &705793884
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705793883}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 605383634}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &705793885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705793883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4180d3320d947cf4582ca4decfaead9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _questId: 13
+  _istenenItemId: 14
+  _countdown: 60
+  "_fi\u015FVersiyonlar\u0131":
+  - "\u015Eimdi dikmek i\xE7in iplik getirmen laz\u0131m \u015Fekerim"
+  - Bir yerden bul ve bana ip getir
+  - "\u0130stersen kendi sa\xE7\u0131ndan s\xF6k ama bana biraz ip getir."
+  "questBitince\u0130temSpawn": 0
+  "_spawnlanacak\u0130temPrefab": {fileID: 0}
 --- !u!1 &706773874
 GameObject:
   m_ObjectHideFlags: 0
@@ -18154,16 +18413,84 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8552479156892473609}
     - target: {fileID: 3094021531583114173, guid: 09b3f5f324004c343abd22bcd8d42da4, type: 3}
+      propertyPath: _allQuests.Array.size
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3094021531583114173, guid: 09b3f5f324004c343abd22bcd8d42da4, type: 3}
+      propertyPath: _allQuests.Array.data[0]
+      value: 
+      objectReference: {fileID: 370255233}
+    - target: {fileID: 3094021531583114173, guid: 09b3f5f324004c343abd22bcd8d42da4, type: 3}
+      propertyPath: _allQuests.Array.data[1]
+      value: 
+      objectReference: {fileID: 1088184794}
+    - target: {fileID: 3094021531583114173, guid: 09b3f5f324004c343abd22bcd8d42da4, type: 3}
+      propertyPath: _allQuests.Array.data[2]
+      value: 
+      objectReference: {fileID: 1225831622}
+    - target: {fileID: 3094021531583114173, guid: 09b3f5f324004c343abd22bcd8d42da4, type: 3}
+      propertyPath: _allQuests.Array.data[3]
+      value: 
+      objectReference: {fileID: 879600585}
+    - target: {fileID: 3094021531583114173, guid: 09b3f5f324004c343abd22bcd8d42da4, type: 3}
+      propertyPath: _allQuests.Array.data[4]
+      value: 
+      objectReference: {fileID: 847796769}
+    - target: {fileID: 3094021531583114173, guid: 09b3f5f324004c343abd22bcd8d42da4, type: 3}
+      propertyPath: _allQuests.Array.data[5]
+      value: 
+      objectReference: {fileID: 2047671001}
+    - target: {fileID: 3094021531583114173, guid: 09b3f5f324004c343abd22bcd8d42da4, type: 3}
+      propertyPath: _allQuests.Array.data[6]
+      value: 
+      objectReference: {fileID: 516716945}
+    - target: {fileID: 3094021531583114173, guid: 09b3f5f324004c343abd22bcd8d42da4, type: 3}
+      propertyPath: _allQuests.Array.data[7]
+      value: 
+      objectReference: {fileID: 532886551}
+    - target: {fileID: 3094021531583114173, guid: 09b3f5f324004c343abd22bcd8d42da4, type: 3}
+      propertyPath: _allQuests.Array.data[8]
+      value: 
+      objectReference: {fileID: 1364407276}
+    - target: {fileID: 3094021531583114173, guid: 09b3f5f324004c343abd22bcd8d42da4, type: 3}
+      propertyPath: _allQuests.Array.data[9]
+      value: 
+      objectReference: {fileID: 1824591015}
+    - target: {fileID: 3094021531583114173, guid: 09b3f5f324004c343abd22bcd8d42da4, type: 3}
+      propertyPath: _allQuests.Array.data[10]
+      value: 
+      objectReference: {fileID: 1535852724}
+    - target: {fileID: 3094021531583114173, guid: 09b3f5f324004c343abd22bcd8d42da4, type: 3}
+      propertyPath: _allQuests.Array.data[11]
+      value: 
+      objectReference: {fileID: 927026636}
+    - target: {fileID: 3094021531583114173, guid: 09b3f5f324004c343abd22bcd8d42da4, type: 3}
+      propertyPath: _allQuests.Array.data[12]
+      value: 
+      objectReference: {fileID: 1772866254}
+    - target: {fileID: 3094021531583114173, guid: 09b3f5f324004c343abd22bcd8d42da4, type: 3}
+      propertyPath: _allQuests.Array.data[13]
+      value: 
+      objectReference: {fileID: 705793885}
+    - target: {fileID: 3094021531583114173, guid: 09b3f5f324004c343abd22bcd8d42da4, type: 3}
+      propertyPath: _allQuests.Array.data[14]
+      value: 
+      objectReference: {fileID: 1369664979}
+    - target: {fileID: 3094021531583114173, guid: 09b3f5f324004c343abd22bcd8d42da4, type: 3}
+      propertyPath: _allQuests.Array.data[15]
+      value: 
+      objectReference: {fileID: 1369664979}
+    - target: {fileID: 3094021531583114173, guid: 09b3f5f324004c343abd22bcd8d42da4, type: 3}
       propertyPath: "_sinireG\xF6reG\xF6revlerAras\u0131Countdown.Array.data[0]"
-      value: 5
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 3094021531583114173, guid: 09b3f5f324004c343abd22bcd8d42da4, type: 3}
       propertyPath: "_sinireG\xF6reG\xF6revlerAras\u0131Countdown.Array.data[1]"
-      value: 5
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3094021531583114173, guid: 09b3f5f324004c343abd22bcd8d42da4, type: 3}
       propertyPath: "_sinireG\xF6reG\xF6revlerAras\u0131Countdown.Array.data[2]"
-      value: 5
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3094021531583114173, guid: 09b3f5f324004c343abd22bcd8d42da4, type: 3}
       propertyPath: "_sinireG\xF6reG\xF6revlerAras\u0131Countdown.Array.data[3]"
@@ -18175,11 +18502,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3418689467885069981, guid: 09b3f5f324004c343abd22bcd8d42da4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -50.23
+      value: 4.46
       objectReference: {fileID: 0}
     - target: {fileID: 3418689467885069981, guid: 09b3f5f324004c343abd22bcd8d42da4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.97
+      value: -48.84
       objectReference: {fileID: 0}
     - target: {fileID: 3418689467885069981, guid: 09b3f5f324004c343abd22bcd8d42da4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -20237,6 +20564,59 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &847796767
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 847796768}
+  - component: {fileID: 847796769}
+  m_Layer: 0
+  m_Name: "G\xF6rev5"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &847796768
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847796767}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 605383634}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &847796769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847796767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4180d3320d947cf4582ca4decfaead9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _questId: 4
+  _istenenItemId: 5
+  _countdown: 60
+  "_fi\u015FVersiyonlar\u0131":
+  - "Bana bir papatya getir tatl\u0131m "
+  - "H\u0131zl\u0131 ol ve bana bir \xE7i\xE7ek getir!"
+  - "Bana hemen bir \xE7i\xE7ek getir k\xFC\xE7\xFCk mikrop!"
+  "questBitince\u0130temSpawn": 0
+  "_spawnlanacak\u0130temPrefab": {fileID: 0}
 --- !u!4 &853633567 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 342503661715227711, guid: 7daea5be650c8264e90e683149f1eaf5, type: 3}
@@ -20590,6 +20970,59 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &879600583
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 879600584}
+  - component: {fileID: 879600585}
+  m_Layer: 0
+  m_Name: "G\xF6rev4"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &879600584
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879600583}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 605383634}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &879600585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879600583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4180d3320d947cf4582ca4decfaead9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _questId: 3
+  _istenenItemId: 4
+  _countdown: 60
+  "_fi\u015FVersiyonlar\u0131":
+  - Bana toka getirebilir misin?
+  - "Bana \u015Fu toka dedi\u011Finiz \u015Feyden getir"
+  - "Sa\xE7lar\u0131n\u0131 yolup almadan \xF6nce bana bir toka bul"
+  "questBitince\u0130temSpawn": 0
+  "_spawnlanacak\u0130temPrefab": {fileID: 0}
 --- !u!1 &890568872
 GameObject:
   m_ObjectHideFlags: 0
@@ -21313,6 +21746,59 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &927026634
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 927026635}
+  - component: {fileID: 927026636}
+  m_Layer: 0
+  m_Name: "G\xF6rev12"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &927026635
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927026634}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 605383634}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &927026636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927026634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4180d3320d947cf4582ca4decfaead9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _questId: 11
+  _istenenItemId: 12
+  _countdown: 60
+  "_fi\u015FVersiyonlar\u0131":
+  - "\u015Earaba benzeyen meyve suyunuzdan getirir misin? "
+  - "\u015Eu k\u0131rm\u0131z\u0131 s\u0131v\u0131dan getir bana."
+  - "Bana kana benzeyen bir \u015Fey getir ya da ben senden elde edeyim."
+  "questBitince\u0130temSpawn": 0
+  "_spawnlanacak\u0130temPrefab": {fileID: 0}
 --- !u!4 &945357721 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3043439236605156073, guid: d8c216b0c5a91fb47906922bab3820b0, type: 3}
@@ -23787,6 +24273,59 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1088184792
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1088184793}
+  - component: {fileID: 1088184794}
+  m_Layer: 0
+  m_Name: "G\xF6rev2"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1088184793
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088184792}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 605383634}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1088184794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088184792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4180d3320d947cf4582ca4decfaead9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _questId: 1
+  _istenenItemId: 2
+  _countdown: 60
+  "_fi\u015FVersiyonlar\u0131":
+  - "Lifinden yararlanabilece\u011Fim bir \u015Fey bulur musun? "
+  - "Hemen bana lifini kullanabilece\u011Fim bir \u015Fey getir!"
+  - "Hemen bana lifini kullanabilece\u011Fim bir \u015Fey getir!"
+  "questBitince\u0130temSpawn": 0
+  "_spawnlanacak\u0130temPrefab": {fileID: 0}
 --- !u!1 &1092326919
 GameObject:
   m_ObjectHideFlags: 0
@@ -26245,6 +26784,60 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1225831620
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1225831621}
+  - component: {fileID: 1225831622}
+  m_Layer: 0
+  m_Name: "G\xF6rev3"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1225831621
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225831620}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 605383634}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1225831622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225831620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4180d3320d947cf4582ca4decfaead9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _questId: 2
+  _istenenItemId: 3
+  _countdown: 60
+  "_fi\u015FVersiyonlar\u0131":
+  - "Bana yap\u0131\u015Fkan bir \u015Fey getirebilir misin?"
+  - "Yap\u0131\u015Ft\u0131rmaya yarayacak bir \u015Fey bul ve buraya getir!"
+  - "\u0130\u015Fe yaramaz et y\u0131\u011F\u0131n\u0131 bana yap\u0131\u015Ft\u0131r\u0131c\u0131
+    olarak kullanabilece\u011Fim bir \u015Fey bul!"
+  "questBitince\u0130temSpawn": 0
+  "_spawnlanacak\u0130temPrefab": {fileID: 0}
 --- !u!1 &1231931016
 GameObject:
   m_ObjectHideFlags: 0
@@ -29028,6 +29621,59 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 342503661715227711, guid: 7daea5be650c8264e90e683149f1eaf5, type: 3}
   m_PrefabInstance: {fileID: 1024486787}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1364407274
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1364407275}
+  - component: {fileID: 1364407276}
+  m_Layer: 0
+  m_Name: "G\xF6rev9"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1364407275
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364407274}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 605383634}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1364407276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364407274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4180d3320d947cf4582ca4decfaead9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _questId: 8
+  _istenenItemId: 9
+  _countdown: 60
+  "_fi\u015FVersiyonlar\u0131":
+  - "Son olarak siyah bir \u015Fey bulman\u0131 istiyorum tatl\u0131m."
+  - "Sonunda son renk, siyah bir \u015Fey getir bana."
+  - "S\u0130YAH!"
+  "questBitince\u0130temSpawn": 0
+  "_spawnlanacak\u0130temPrefab": {fileID: 0}
 --- !u!1 &1367104617
 GameObject:
   m_ObjectHideFlags: 0
@@ -29158,6 +29804,61 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1369664977
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1369664978}
+  - component: {fileID: 1369664979}
+  m_Layer: 0
+  m_Name: "G\xF6rev15"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1369664978
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369664977}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 605383634}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1369664979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369664977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4180d3320d947cf4582ca4decfaead9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _questId: 14
+  _istenenItemId: 15
+  _countdown: 60
+  "_fi\u015FVersiyonlar\u0131":
+  - "Bisikletinin tekerlerini \u015Fi\u015Firmek i\xE7in kulland\u0131\u011F\u0131n
+    alete ihtiyac\u0131m var tatl\u0131m."
+  - "Bana \xE7abuk pompa getir!"
+  - "Bana pompa getir yoksa ben bulur ve senin i\xE7ini havayla doldurmak i\xE7in
+    kullan\u0131r\u0131m."
+  "questBitince\u0130temSpawn": 0
+  "_spawnlanacak\u0130temPrefab": {fileID: 0}
 --- !u!1 &1374674839
 GameObject:
   m_ObjectHideFlags: 0
@@ -32823,6 +33524,59 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1535852722
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1535852723}
+  - component: {fileID: 1535852724}
+  m_Layer: 0
+  m_Name: "G\xF6rev11"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1535852723
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535852722}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 605383634}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1535852724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535852722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4180d3320d947cf4582ca4decfaead9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _questId: 10
+  _istenenItemId: 11
+  _countdown: 60
+  "_fi\u015FVersiyonlar\u0131":
+  - "Bana \u015F\xF6yle tazesinden yar\u0131m kilo et getirir misin can\u0131m?"
+  - "Bir \u015Fekilde et bulup bana getir! "
+  - "Kedinin ya da senin etlerinizi y\xFCzmemi istemiyorsan bana bir yerden et bul!"
+  "questBitince\u0130temSpawn": 0
+  "_spawnlanacak\u0130temPrefab": {fileID: 0}
 --- !u!1 &1538394882
 GameObject:
   m_ObjectHideFlags: 0
@@ -37136,6 +37890,59 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1772866252
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1772866253}
+  - component: {fileID: 1772866254}
+  m_Layer: 0
+  m_Name: "G\xF6rev13"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1772866253
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772866252}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 605383634}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1772866254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772866252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4180d3320d947cf4582ca4decfaead9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _questId: 13
+  _istenenItemId: 14
+  _countdown: 60
+  "_fi\u015FVersiyonlar\u0131":
+  - "Diki\u015F i\xE7in kullan\u0131lan i\u011Fnelerden bulabilirsen \xE7ok sevinirim"
+  - "\u015Eu sivri k\xFC\xE7\xFCk bat\u0131r\u0131lan \u015Feylerden bulmal\u0131s\u0131n."
+  - "Ben sana bir \u015Feyler saplamadan \xF6nce bana i\u011Fne getir."
+  "questBitince\u0130temSpawn": 0
+  "_spawnlanacak\u0130temPrefab": {fileID: 0}
 --- !u!1 &1776608897
 GameObject:
   m_ObjectHideFlags: 0
@@ -38604,6 +39411,60 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.5480957, y: 0.66640663}
   m_EdgeRadius: 0
+--- !u!1 &1824591013
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1824591014}
+  - component: {fileID: 1824591015}
+  m_Layer: 0
+  m_Name: "G\xF6rev10"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1824591014
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824591013}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 605383634}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1824591015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824591013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4180d3320d947cf4582ca4decfaead9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _questId: 9
+  _istenenItemId: 10
+  _countdown: 60
+  "_fi\u015FVersiyonlar\u0131":
+  - "Hayat\u0131m mutfaktan bir tabak getirir misin?"
+  - Bana tabak getir.
+  - "K\xFC\xE7\xFCk bacaklar\u0131n\u0131 k\u0131rmam\u0131 istemiyorsan onlar\u0131
+    bana bir tabak getirmek i\xE7in kullan pis insan!"
+  "questBitince\u0130temSpawn": 0
+  "_spawnlanacak\u0130temPrefab": {fileID: 0}
 --- !u!1 &1837774381
 GameObject:
   m_ObjectHideFlags: 0
@@ -42909,6 +43770,60 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2047670999
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2047671000}
+  - component: {fileID: 2047671001}
+  m_Layer: 0
+  m_Name: "G\xF6rev6"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2047671000
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047670999}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 605383634}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2047671001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047670999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4180d3320d947cf4582ca4decfaead9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _questId: 5
+  _istenenItemId: 6
+  _countdown: 60
+  "_fi\u015FVersiyonlar\u0131":
+  - "Bana bir \u015Fekilde f\u0131r\xE7a bulabilir misin minik ku\u015Fum? "
+  - "Kedinin t\xFCylerini toplay\u0131p bana getir."
+  - "B\xFCt\xFCn g\xFCn ortada dola\u015F\u0131p sinirimi bozan t\xFCy yuma\u011F\u0131n\u0131n
+    k\u0131llar\u0131na ihtiyac\u0131m var, hemen!"
+  "questBitince\u0130temSpawn": 0
+  "_spawnlanacak\u0130temPrefab": {fileID: 0}
 --- !u!1 &2048387691 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8597266474890318946, guid: 83535890d9c86024ba1cb3104f9f692c, type: 3}
@@ -44536,11 +45451,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8660844176593126956, guid: aa99f495f4ec38f48be65c6e62f6ecb8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -49.41
+      value: 7.26
       objectReference: {fileID: 0}
     - target: {fileID: 8660844176593126956, guid: aa99f495f4ec38f48be65c6e62f6ecb8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -21.96
+      value: -50.04
       objectReference: {fileID: 0}
     - target: {fileID: 8660844176593126956, guid: aa99f495f4ec38f48be65c6e62f6ecb8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -44929,7 +45844,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4130187102440329040, guid: 6421277237832d54e979fda9348722f3, type: 3}
       propertyPath: _isUsable
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5391801464775537141, guid: 6421277237832d54e979fda9348722f3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -45261,3 +46176,4 @@ SceneRoots:
   - {fileID: 5873375100279334922}
   - {fileID: 657726017}
   - {fileID: 1677063535}
+  - {fileID: 605383634}
