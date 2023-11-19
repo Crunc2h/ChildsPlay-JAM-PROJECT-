@@ -181,7 +181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RelevantItemIDs: 
-  _interactionSFX: {fileID: 0}
+  _interactionSFX: {fileID: 1312404007736086775}
   _minimumInteractionDistance: 2
 --- !u!114 &6299204677202060742
 MonoBehaviour:
