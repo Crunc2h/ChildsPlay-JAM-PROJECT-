@@ -60,6 +60,16 @@ public class ReceiveInteraction : MonoBehaviour
             {
                 GameObject.FindGameObjectWithTag("Robot").GetComponent<QuestManager>().PlayerClick();
             }
+
+            if (hit.collider != null && hit.collider.tag == "Cat")
+            {
+                var allItems = GameObject.FindGameObjectsWithTag("Item");
+                var kediTüyleri = allItems.Where(_item => _item.GetComponent<Item>().GetItemId() == 6);
+                kediTüyleri.First().transform.position = transform.position;
+                //kedi ölme sfx
+                Destroy(gameObject);
+
+            }
         }
     }
     private bool CheckInteractionDistance() => Vector3.Distance(transform.position,

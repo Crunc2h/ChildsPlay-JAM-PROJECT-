@@ -18,6 +18,7 @@ TagManager:
   - canvas
   - Camera
   - Door
+  - Cat
   layers:
   - Default
   - TransparentFX

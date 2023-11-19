@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,11 +9,13 @@ public class QuestManager : MonoBehaviour
 {
     public GameObject fişPrefab = null;
     public float[] _sinireGöreGörevlerArasıCountdown = null;
+    public int[] _changeStateItemIds = null;
     public int CurrentAnger { get; private set; } = 0;
     public Quest[] _allQuests = new Quest[16];
 
 
     public string _currentFişString { get; private set; } = string.Empty;
+    private int _stateNumber = 0;
     private int _currentQuestId = default;
     private int _currentlyExpectedItemId = default;
     private float _timer = default;
@@ -39,6 +42,10 @@ public class QuestManager : MonoBehaviour
     void Update()
     {
         AdjustCountdown();
+        if(_anim.GetInteger("statenumber") != _stateNumber)
+        {
+            _anim.SetInteger("statenumber", _stateNumber);
+        }
         if(!_takingQuest)
         {
             if (_interumCountdownOn && !_questActive)
@@ -113,6 +120,11 @@ public class QuestManager : MonoBehaviour
             && _player.GetComponent<ItemInteraction>().interactionActive 
             && _player.GetComponent<ItemInteraction>().ActiveItemID == _currentlyExpectedItemId)
         {     
+            if(_changeStateItemIds.Contains(_player.GetComponent<ItemInteraction>().ActiveItemID))
+            {
+                _anim.SetTrigger("changestate");
+                _stateNumber++;
+            }
             QuestSuccessful();
         }
         else
