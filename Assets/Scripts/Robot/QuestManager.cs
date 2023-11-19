@@ -171,16 +171,21 @@ public class QuestManager : MonoBehaviour
 
     private void AdjustAngerUI()
     {
-        var angerBar = GameObject.FindGameObjectWithTag("AngerBar");
+        var angerBar = GameObject.FindGameObjectWithTag("AngerBar").transform.GetChild(0);
         for(int i = 0; i < 3; i++)
         {
             if(i <= CurrentAnger - 1)
             {
-                angerBar.transform.GetChild(i).GetComponent<Image>().color = Color.red;
+                Color darkRed = new Color(109, 0, 0);
+                darkRed.a = 1;
+                angerBar.transform.GetChild(i).GetComponent<Image>().color = darkRed;
+
             }
             else
             {
-                angerBar.transform.GetChild(i).GetComponent<Image>().color = Color.white;
+                Color transparent = new Color(1, 1, 1);
+                transparent.a = 0;
+                angerBar.transform.GetChild(i).GetComponent<Image>().color = transparent;
             }
         }
     }
@@ -210,7 +215,7 @@ public class QuestManager : MonoBehaviour
         }
         if(!_takingQuest)
         {
-            _countdownTextMesh.text = _timer.ToString();
+            _countdownTextMesh.text = ((int)_timer).ToString();
         }
         else
         {
